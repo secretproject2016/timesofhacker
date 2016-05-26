@@ -5,9 +5,9 @@
 		<hr>
 	</header>
 
-
-<%= @post.title %>
-<%= @post.content %>
+	<div id="content">
+		<%= markdown @post.content %>
+	</div>
 
 		<div id="admin_links">
 			<%= link_to "Edit Article", edit_post_path(@post) %>
